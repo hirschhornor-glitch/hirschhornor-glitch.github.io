@@ -1,0 +1,1913 @@
+{
+  "_schema": {
+    "description": "Floor placement of built public allocations (הפרשות מבונות) read from building-appendix cross-sections (נספח בינוי / חתכים). Keyed by normalized taba. Manually curated by visually reading rendered section PNGs — section drawings are not machine-parseable.",
+    "fields": {
+      "plan_name": "101-<taba>",
+      "source_doc": "which appendix file/sheet the reading came from",
+      "source_type": "colored_section | elevation_plus_floorplans | floorplan | text_only",
+      "confidence": "high | medium | low",
+      "allocations": "list of {use, lot, floor_label, floor_min, floor_max, note}"
+    }
+  },
+  "1350255": {
+    "plan_name": "101-1350255",
+    "source_doc": "נספח בינוי — חתך S-3 (_reka_02.pdf)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "site_note": "קניון הדר — מתחם מעורב משופע. הגוש הציבורי בקומות 5-8 (מעל מסחר/חניון 00-04, מתחת למגורים מ-10). פילוח פר-קומה (מאומת מול המתכננת): ק.5=בי\"ס(מתחיל)+מתנ\"ס+2 בתי כנסת+מבנה ציבור; ק.6=מעונות יום(+בי\"ס); ק.7=בי\"ס בלבד; ק.8=גני ילדים.",
+    "allocations": [
+      {
+        "use": "בי\"ס",
+        "floor_start": "5",
+        "floor_label": "קומות 5-8 (מתחיל בקומה 5)",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת מול חתך S-3"
+      },
+      {
+        "use": "מעונות יום",
+        "floor_start": "6",
+        "floor_label": "קומה 6 (מעל המסחר)",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת מול חתך S-3"
+      },
+      {
+        "use": "גני ילדים",
+        "floor_start": "8",
+        "floor_label": "קומה 8 — ראש הגוש הציבורי",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת מול חתך S-3"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "5",
+        "floor_label": "קומה 5 (2 בתי כנסת)",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת מול חתך S-3"
+      },
+      {
+        "use": "קהילה ורווחה",
+        "floor_start": "5",
+        "floor_label": "קומה 5 (מתנ\"ס)",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת מול חתך S-3"
+      }
+    ]
+  },
+  "1277243": {
+    "plan_name": "101-1277243",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע ±0.00 / מפלס 723.45 (חתך א + תכנית קומת קרקע); חצר גן 175 מ\"ר",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "1242700": {
+    "plan_name": "101-1242700",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת כניסה (מפלס 0)",
+        "confidence": "high"
+      }
+    ]
+  },
+  "1219724": {
+    "plan_name": "101-1219724",
+    "source_doc": "_reka_02.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "3 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "classes": 3,
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומת קרקע"
+      },
+      {
+        "use": "18 כיתות בי\"ס",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "classes": 18,
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומת קרקע"
+      },
+      {
+        "use": "1 בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומת קרקע"
+      },
+      {
+        "use": "תפעול/חירום",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומת קרקע"
+      }
+    ]
+  },
+  "1225218": {
+    "plan_name": "101-1225218",
+    "source_doc": "_horaot_01.pdf (עמ' 11 'שטחים מבנים לצרכי ציבור' המפנה לנספח הבינוי - אזורי חום כתום); _reka_07-10 חזיתות לא ניתנו לרינדור",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "sqm": 130,
+        "classes": 1,
+        "note": "מאומת מול המתכננת (קרקע/1)"
+      },
+      {
+        "use": "מועדון נוער",
+        "floor_start": "1",
+        "floor_label": "קומה 1",
+        "confidence": "high",
+        "sqm": 270,
+        "note": "מאומת מול המתכננת (קרקע/1)"
+      },
+      {
+        "use": "מבנה ציבור",
+        "floor_start": "1",
+        "floor_label": "קומה 1",
+        "confidence": "high",
+        "sqm": 500,
+        "note": "מאומת מול המתכננת (קרקע/1)"
+      }
+    ]
+  },
+  "151589": {
+    "plan_name": "101-151589",
+    "source_doc": "_nispach_02.pdf (חזיתות + תכניות קומה: קרקע / ב / ג + תכנית הצבה)",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גן ילדים",
+        "floor_label": "קומת קרקע",
+        "elev_m": "746.28 (0.00)",
+        "note": "בתכנית קומת הקרקע מסומנת ומסומלת 'כיתת גן' + חדר 'פעילות' + חצר; הקומות העליונות (ב' +6.67/752.95, ג' +9.73) הן קומות אחרות",
+        "floor_start": "קרקע",
+        "confidence": "high"
+      }
+    ]
+  },
+  "252379": {
+    "plan_name": "101-252379",
+    "source_doc": "— (אין נספח בינוי; כל הסקשנים נבדקו: ניקוז/תנועה/תשריט/הצבה/סקר עצים בלבד)",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "3 כיתות מעון יום",
+        "floor_label": "לא נמצא פילוח קומה בנספח (לתכנית אין נספח בינוי)",
+        "note": "מתחם רב-מבני; הקומות 2-5 מסומנות 'חזית בקומה' = מגורים, לכן השימושים הציבוריים בקומת קרקע/פודיום. תוויות החדרים בתכנית קומת הקרקע הצבעונית לא היו קריאות לזיהוי ודאי של מעון/גן/ביכ\"נ פר-קומה",
+        "floor_start": null,
+        "confidence": "low"
+      },
+      {
+        "use": "2 גני ילדים",
+        "floor_label": "לא נמצא פילוח קומה בנספח (לתכנית אין נספח בינוי)",
+        "note": "כנ\"ל",
+        "floor_start": null,
+        "confidence": "low"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_label": "לא נמצא פילוח קומה בנספח (לתכנית אין נספח בינוי)",
+        "note": "כנ\"ל",
+        "floor_start": null,
+        "confidence": "low"
+      }
+    ]
+  },
+  "430249": {
+    "plan_name": "101-430249",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים בקומת הקרקע",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "515635": {
+    "plan_name": "101-515635",
+    "source_doc": "_nispach_01/04/05.pdf (תכניות פיתוח/הצבה צבעוניות) + נספח 4 סקר עצים + נספח 7 טבלת הקצאה ואיזון",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_label": "לא נמצא פילוח קומה בנספח",
+        "note": "התחדשות שכונת גוננים; הנספחים הם תכניות פיתוח/הצבה/תנועה + סקר עצים + טבלת הקצאה ואיזון בלבד. אין תכנית קומה מתויגת ואין חתך-שימושים צבעוני שמראה את קומת הגן"
+      },
+      {
+        "use": "דירת רווחה",
+        "floor_label": "לא נמצא פילוח קומה בנספח",
+        "note": "כנ\"ל"
+      }
+    ]
+  },
+  "565317": {
+    "plan_name": "101-565317",
+    "source_doc": "_nispach_02.pdf (תכניות קומה צבעוניות: קרקע / טיפוסית / גג)",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_label": "קומת קרקע",
+        "elev_m": "697.50 (±0.00)",
+        "note": "בתכנית קומת הקרקע מסומן 'גן ילדים' בכחול במפלס ±0.00=697.50, לצד 'חצר גן ילדים' (ירוק) ו'לובי כניסה'. המסחר באותה קומה במפלס +0.50=698.00",
+        "floor_start": "קרקע",
+        "confidence": "high"
+      }
+    ]
+  },
+  "502948": {
+    "plan_name": "101-502948",
+    "source_doc": "_nispach_06.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מגרש 1 - 3 כיתות מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (פודיום ורוד בבסיס המגדלים, מעל מרתפי חניה)",
+        "confidence": "high",
+        "sqm": 441,
+        "classes": 3,
+        "note": "מאומת מהחתך _nispach_06: מעון בפודיום הציבורי בבסיס"
+      }
+    ]
+  },
+  "547992": {
+    "plan_name": "101-547992",
+    "source_doc": "_horaot_01.pdf + _nispach_04.pdf (נספח בינוי - חתכים א-א וכו')",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גן ילדים",
+        "floor_start": "0",
+        "floor_label": "קומה 0 (מפלס דרך בית לחם / השצ\"פ - מתחת לקומת הקרקע הפונה לדרך חברון; גג קומת המסחר משמש לחצרות הגן והמעון)",
+        "sqm": null,
+        "confidence": "high"
+      },
+      {
+        "use": "מעון יום",
+        "floor_start": "0",
+        "floor_label": "קומה 0 (מפלס דרך בית לחם / השצ\"פ, מעל קומת המסחר; חצרות על גג קומת המסחר)",
+        "sqm": null,
+        "confidence": "medium"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "0",
+        "floor_label": "מקובץ עם הגן והמעון כהפרשה מבונה במפלס דרך בית לחם / השצ\"פ (מבנים ומוסדות ציבור = 935 מ\"ר סה\"כ בטבלת הזכויות)",
+        "sqm": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "545806": {
+    "plan_name": "101-545806",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "מעון לבעלי מוגבלויות",
+        "floor_start": "-1",
+        "floor_label": "קומת מרתף -1 / קומת כניסה (מפלס -4.40, אתר משופע)",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "836809": {
+    "plan_name": "101-836809",
+    "source_doc": "_nispach_05.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מגרש 1 - 2 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע",
+        "confidence": "high",
+        "classes": 2
+      },
+      {
+        "use": "מגרש 2 - 2 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע",
+        "confidence": "high",
+        "classes": 2
+      },
+      {
+        "use": "מגרש 4 - 2 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע",
+        "confidence": "high",
+        "classes": 2
+      },
+      {
+        "use": "מגרש 5 - 3 כיתות מעון",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע",
+        "confidence": "high",
+        "classes": 3
+      },
+      {
+        "use": "מגרש 6 - 3 כיתות מעון",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע",
+        "confidence": "high",
+        "classes": 3
+      },
+      {
+        "use": "מגרש 7 - 2 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע",
+        "confidence": "high",
+        "classes": 2
+      }
+    ]
+  },
+  "560805": {
+    "plan_name": "101-560805",
+    "source_doc": "_nispach_05.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "3 כיתות מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "מפלס רחוב דרך חברון (+769.40)",
+        "confidence": "high",
+        "classes": 3
+      },
+      {
+        "use": "3 כיתות גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "מפלס רחוב דרך חברון (+769.40)",
+        "confidence": "high",
+        "classes": 3
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "מפלס רחוב דרך חברון (+769.40)",
+        "confidence": "high"
+      }
+    ]
+  },
+  "657601": {
+    "plan_name": "101-657601",
+    "source_doc": "_nispach_02.pdf (נספח בינוי - חתך 1-1, מ.ק 1:500, עם לוח מפלסים)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גני ילדים",
+        "floor_start": "0",
+        "floor_label": "מפלס +759.50 - מפלס כניסה תחתון מדרך בית לחם, מתחת לקומת המסחר (+770.00 / קומה 1) ומעל חצר הפריקה והחניון; בחתך מסומנות 'כיתות גן/משחק' + 'חצר מקורה' + 'חצר פתוחה'",
+        "sqm": null,
+        "confidence": "high"
+      },
+      {
+        "use": "בית כנסת, טיפת חלב ומעון יום",
+        "floor_start": "0",
+        "floor_label": "מפלס +759.50 - אותו מפלס כניסה תחתון מדרך בית לחם; בחתך מסומן 'בית כנסת (מבנה)' צמוד לכיתות הגן, מתחת לקומת המסחר/מלון",
+        "sqm": null,
+        "confidence": "high"
+      }
+    ]
+  },
+  "666032": {
+    "plan_name": "101-666032",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "2 כיתות גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (+702.35)",
+        "confidence": "high",
+        "classes": 2
+      }
+    ]
+  },
+  "608125": {
+    "plan_name": "101-608125",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "חינוך-גנ\"י",
+        "floor_start": "קרקע",
+        "floor_label": "מגרש 100 - מבנה ציבור עצמאי בקומת קרקע (+103.93), נפרד ממגדלי המגורים, בתשריט הבינוי ופיתוח",
+        "sqm": 260,
+        "confidence": "medium"
+      },
+      {
+        "use": "דת",
+        "floor_start": "קרקע",
+        "floor_label": "מגרש 101 - מבנה ציבור עצמאי בקומת קרקע (+103.93), נפרד ממגדלי המגורים, עם שצ\"פ (מגרש 490) ביניהם",
+        "sqm": 250,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "771550": {
+    "plan_name": "101-771550",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "כיתת גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע/כניסה (נספח בינוי - גיליון רצועה רחב)",
+        "sqm": null,
+        "confidence": "low"
+      },
+      {
+        "use": "מועדון לקשיש",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע/כניסה (נספח בינוי - גיליון רצועה רחב)",
+        "sqm": null,
+        "confidence": "low"
+      }
+    ]
+  },
+  "771600": {
+    "plan_name": "101-771600",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע/כניסה +0.00 (763.00)",
+        "confidence": "high",
+        "classes": 8
+      },
+      {
+        "use": "בי\"ס",
+        "floor_start": "קרקע",
+        "floor_label": "מתחת לקומת קרקע - גג ירוק על בית ספר ב+0.00 (759.50)",
+        "confidence": "medium"
+      },
+      {
+        "use": "מעון",
+        "floor_start": null,
+        "floor_label": "",
+        "confidence": "low"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": null,
+        "floor_label": "",
+        "confidence": "low"
+      }
+    ]
+  },
+  "783548": {
+    "plan_name": "101-783548",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (±0.00 / 772.40)",
+        "confidence": "high",
+        "sqm": 130,
+        "classes": 2
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (±0.00 / 772.40)",
+        "confidence": "high",
+        "sqm": 250
+      }
+    ]
+  },
+  "791467": {
+    "plan_name": "101-791467",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "קהילה ורווחה",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (±0.00 / +771.10)",
+        "confidence": "high",
+        "sqm": 250
+      },
+      {
+        "use": "כיתת גן",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (-0.35 / +770.75)",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "794214": {
+    "plan_name": "101-794214",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "כיתת גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (±0.00 / 748.00), מגרש 1",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "867317": {
+    "plan_name": "101-867317",
+    "source_doc": "_horaot_01.pdf (סעיף הפקעות לצרכי ציבור) + נספחי בינוי (מבנה בן 30 קומות, מסחר/ציבור ממפלס -1 עד 06)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "תרבות / אומנות",
+        "floor_start": "קרקע",
+        "floor_label": "מפלס קומת הקרקע ומפלס הגלריה (מסומן בצבע חום בנספח הבינוי)",
+        "sqm": 280,
+        "confidence": "high"
+      },
+      {
+        "use": "2 כיתות גני ילדים",
+        "floor_start": "5",
+        "floor_label": "מפלס 05 של המבנה (כל כיתה ~130 מ\"ר + חצר צמודה ~175 מ\"ר; מסומן חום בנספח הבינוי)",
+        "sqm": 130,
+        "classes": 2,
+        "confidence": "high"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "6",
+        "floor_label": "מפלס 06 של המבנה (מסומן חום בנספח הבינוי)",
+        "sqm": 250,
+        "confidence": "high"
+      }
+    ]
+  },
+  "932152": {
+    "plan_name": "101-932152",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "0",
+        "floor_label": "קומה 0 / קומת קרקע (מפלס כניסה ~+791.00, מעל חניונים UG1-UG3) - הפרשה לצורכי ציבור",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "926105": {
+    "plan_name": "101-926105",
+    "source_doc": "_reka_04.pdf (נספח איכות הסביבה / חוות דעת אקלימית — כולל תשריט מצב מוצע ונספח הבינוי: חזיתות, חתכים ומפלסים)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "שלוחת מתנ\"ס",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומת קרקע"
+      },
+      {
+        "use": "מעון יום / אשכול גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומת קרקע"
+      }
+    ]
+  },
+  "855668": {
+    "plan_name": "101-855668",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "בית ספר",
+        "floor_start": "קרקע",
+        "floor_label": "בית ספר על מגרש נפרד (30169/61,122,123) - מבנה ציבור נמוך מסומן בוורוד בתכניות הקומה עם חצר ירוקה בגובה הקרקע, נפרד ממגדלי המגורים",
+        "sqm": 2000,
+        "classes": 6,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "944512": {
+    "plan_name": "101-944512",
+    "source_doc": "_nispach_06.pdf (חוות דעת כלכלית — סיכום מטלה ציבורית) ; שרטוטי בינוי ב-_nispach_09.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "בניין A - גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "מוסדות הציבור ישולבו בקומות הקרקע של המגדלים",
+        "confidence": "high",
+        "sqm": 260
+      },
+      {
+        "use": "בניין A - שימוש ציבורי",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "sqm": 280
+      },
+      {
+        "use": "בניין B - שימוש ציבורי",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "sqm": 470
+      },
+      {
+        "use": "בניין C - שימוש ציבורי",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "high",
+        "sqm": 235
+      },
+      {
+        "use": "בניין D - שימוש ציבורי",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (לצד 300 מ\"ר מסחר בק\"ק בניין D)",
+        "confidence": "high",
+        "sqm": 120
+      }
+    ]
+  },
+  "950493": {
+    "plan_name": "101-950493",
+    "source_doc": "_nispach_03.pdf (נספח בינוי מנחה — חתכים/חזיתות + תכניות קומה עם תוויות שימוש ושטחים)",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מעון יום (5 כיתות)",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע ±0.00 (מצוין 'מעון יום' עם footprint ~750 מ\"ר), נמשך אל מפלס +8.90",
+        "confidence": "high",
+        "sqm": 600,
+        "classes": 5
+      },
+      {
+        "use": "מעון (4 כיתות)",
+        "floor_start": "1",
+        "floor_label": "מפלס +8.90 (מעל קומת הקרקע) — תוויות 'מעון יום' חוזרות (284/286 מ\"ר)",
+        "confidence": "medium",
+        "sqm": 600,
+        "classes": 4
+      }
+    ]
+  },
+  "935189": {
+    "plan_name": "101-935189",
+    "source_doc": "_nispach_09.pdf (טבלאות איזון והקצאה — תיאור פרויקט מוצע) ; שרטוטי חזית/מפלס ב-_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "גני ילדים (3)",
+        "floor_start": "קרקע",
+        "floor_label": "אשכול גני ילדים במגרש מבני ציבור ייעודי (תא שטח 2) — מתחיל בקרקע",
+        "confidence": "medium",
+        "sqm": 390,
+        "classes": 3
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "1",
+        "floor_label": "ב-2 קומות המסד מעל קומת קרקע מסחרית (פודיום ≠ קרקע); ק\"ק = מסחר בלבד",
+        "confidence": "medium",
+        "sqm": 331
+      }
+    ]
+  },
+  "1008176": {
+    "plan_name": "101-1008176",
+    "source_doc": "_nispach_05.pdf (חוות דעת סביבתית — תיאור התכנית המוצעת + תכנית הבינוי תרשים ב.2)",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "גני ילדים (2)",
+        "floor_start": "קרקע",
+        "floor_label": "מפלס סן מרטין (קומת הכניסה הקובעת) — 'במפלס סן מרטין ישנה כניסה גם לשני גני ילדים'",
+        "confidence": "medium",
+        "sqm": 260,
+        "classes": 2
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": null,
+        "floor_label": "קומת ביניים ציבורית (הפרש גובה ~10 מ' בין סן מרטין לבר יוחאי מאפשר מפלס ביניים הכולל בית כנסת)",
+        "confidence": "medium",
+        "sqm": 500
+      }
+    ]
+  },
+  "955450": {
+    "plan_name": "101-955450",
+    "source_doc": "_horaot_01.pdf (סעיף רישום שטחים ציבוריים - אות צ' צבוע חום) + נספחי בינוי",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "3 כיתות מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "קומת הקרקע (שטח בנוי 440 מ\"ר + חצרות 305 מ\"ר; שלוש הכיתות במפלס אחד)",
+        "sqm": 440,
+        "classes": 3,
+        "confidence": "high"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "1",
+        "floor_label": "הקומה הראשונה (שטח בנוי 450 מ\"ר)",
+        "sqm": 450,
+        "confidence": "high"
+      },
+      {
+        "use": "מרכז לשירותי קהילה ורווחה",
+        "floor_start": "1",
+        "floor_label": "הקומה הראשונה (שטח בנוי 305 מ\"ר)",
+        "sqm": 305,
+        "confidence": "high"
+      }
+    ]
+  },
+  "1002054": {
+    "plan_name": "101-1002054",
+    "source_doc": "_nispach_11.pdf (נספח פרוגרמה לצרכי ציבור — המלצות ומענים ציבוריים מוצעים) ; שרטוטי בינוי ב-_nispach_06.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מעון יום (3 כיתות) / חינוך",
+        "floor_start": "קרקע",
+        "floor_label": "קומת הכניסה העליונה של הבניין המערבי (440 מ\"ר בנוי + 305 מ\"ר חצרות באותו מפלס)",
+        "confidence": "high",
+        "sqm": 440,
+        "classes": 3
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "במפלס רחוב, מתחת לחצרות מעון היום (300 מ\"ר)",
+        "confidence": "high",
+        "sqm": 300
+      },
+      {
+        "use": "שטח ציבורי לקהילה/תרבות",
+        "floor_start": "קרקע",
+        "floor_label": "שטח ציבורי בנוי לצרכי קהילה (230 מ\"ר)",
+        "confidence": "medium",
+        "sqm": 230
+      }
+    ]
+  },
+  "842617": {
+    "plan_name": "101-842617",
+    "source_doc": "_nispach_04.pdf (נספח לטבלת הקצאה ואיזון — מציין מיקום בנספח הבינוי) ; שרטוטי חזית ב-_other_14/15/16/17.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "-1",
+        "floor_label": "קומה -1 של בניין B (שטח ציבורי כ-250 מ\"ר ברוטו + חצר 175 מ\"ר; שימוש לחינוך ותרבות בלבד)",
+        "confidence": "high",
+        "sqm": 130
+      },
+      {
+        "use": "קהילה ותרבות",
+        "floor_start": "-1",
+        "floor_label": "קומה -1 של בניין B (חלק מ-250 מ\"ר הציבוריים; חינוך ותרבות)",
+        "confidence": "high",
+        "sqm": 120
+      }
+    ]
+  },
+  "987016": {
+    "plan_name": "101-987016",
+    "source_doc": "_nispach_01.pdf (נספח בינוי ופיתוח — תכניות מפלס/חתכים, חדרים ציבוריים צבועים)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מעון (3 כיתות)",
+        "floor_start": "קרקע",
+        "floor_label": "קומת כניסה/קרקע (מפלס אחד)",
+        "confidence": "high",
+        "sqm": 440,
+        "classes": 3,
+        "note": "מאומת מול המתכננת: הכל במפלס אחד"
+      },
+      {
+        "use": "גני ילדים (2)",
+        "floor_start": "קרקע",
+        "floor_label": "קומת כניסה/קרקע (מפלס אחד)",
+        "confidence": "high",
+        "sqm": 260,
+        "classes": 2,
+        "note": "מאומת מול המתכננת: הכל במפלס אחד"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומת כניסה/קרקע (מפלס אחד)",
+        "confidence": "high",
+        "sqm": 400,
+        "note": "מאומת מול המתכננת: הכל במפלס אחד"
+      }
+    ]
+  },
+  "791319": {
+    "plan_name": "101-791319",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "colored_section",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "מעון יום אינו מסומן כבלוק נפרד בחזיתות/חתכים. החתך מראה: קומה 0 (קרקע)=מסחר, קומות 1-4=תעסוקה (סגול), קומה 4+ ומעלה=מגורים (צהוב). המעון (3 כיתות) לא ממוקם בקומה ספציפית בנספח הבינוי",
+        "sqm": null,
+        "confidence": "low"
+      }
+    ]
+  },
+  "923755": {
+    "plan_name": "101-923755",
+    "source_doc": "_reka_05.pdf (נספח בינוי — חזיתות, חתכים, תכניות קומה; חדר גן ילדים בירוק בתכנית קומת קרקע)",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע (חדר ציבורי מודגש בירוק)",
+        "confidence": "high",
+        "sqm": 128
+      }
+    ]
+  },
+  "972554": {
+    "plan_name": "101-972554",
+    "source_doc": "_reka_04.pdf",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "קהילה/חינוך",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (+0.00)",
+        "confidence": "medium",
+        "sqm": 130
+      }
+    ]
+  },
+  "123": {
+    "plan_name": "101-123",
+    "source_doc": "_reka_03.pdf (נספח בינוי - תכנית קומת קרקע צבעונית)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "3 כיתות מעון (440)",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע — מסומן \"מעונות יום 3 כיתות 440 מ\"ר\"",
+        "sqm": 440,
+        "classes": 3,
+        "confidence": "high",
+        "note": "נספח בינוי _reka_03, חדר כחול בקומת קרקע"
+      },
+      {
+        "use": "3 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע — \"כיתה גן 88 מ\"ר\" (צמוד למעון)",
+        "sqm": 88,
+        "classes": 3,
+        "confidence": "high",
+        "note": "נספח בינוי _reka_03"
+      },
+      {
+        "use": "12 כיתות בי\"ס",
+        "floor_start": "1",
+        "floor_label": "קומה 1 (לא אותר במפורש בתכנית הקרקע)",
+        "confidence": "medium",
+        "note": "לא אותר בנספח הבינוי בבירור — נשמר מקריאה קודמת"
+      },
+      {
+        "use": "בית כנסת (350)",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע",
+        "confidence": "medium",
+        "note": "לא אותר במפורש"
+      }
+    ]
+  },
+  "921213": {
+    "plan_name": "101-921213",
+    "source_doc": "_reka_07.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "3",
+        "floor_label": "קומה 3 עד 5 (גג המסד), מרחוב התנופה",
+        "confidence": "high",
+        "sqm": 130,
+        "classes": 2
+      }
+    ]
+  },
+  "928176": {
+    "plan_name": "101-928176",
+    "source_doc": "_reka_07.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומה במפלס פיתוח/כניסה (אתר משופע, מפלסים +750 עד +761)",
+        "sqm": 400,
+        "confidence": "high"
+      },
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומה במפלס פיתוח/כניסה (מסומן 'גן 130 מ\"ר' + 'לובי גני ילדים')",
+        "sqm": 130,
+        "confidence": "high"
+      },
+      {
+        "use": "מסחר",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומה במפלס פיתוח (מסומן 'מסחר 65 מ\"ר', צבע אפור=מסחר)",
+        "sqm": 65,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1033869": {
+    "plan_name": "101-1033869",
+    "source_doc": "_reka_06.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (מבנה ציבור)",
+        "confidence": "high",
+        "classes": 4
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (ציבורי פרטי)",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1071448": {
+    "plan_name": "101-1071448",
+    "source_doc": "_nispach_06.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע, מפלס גן לינדסי (+0.00)",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "1025295": {
+    "plan_name": "101-1025295",
+    "source_doc": "_nispach_06.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע / מסד (כניסה מרחוב טוביה בן חפץ)",
+        "confidence": "high",
+        "sqm": 440,
+        "classes": 3
+      },
+      {
+        "use": "שלוחת מתנ\"ס",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע / מסד",
+        "confidence": "high",
+        "sqm": 200
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע / מסד שני (מגדל מערבי, מרחוב בן זכאי)",
+        "confidence": "high",
+        "sqm": 500
+      }
+    ]
+  },
+  "1078476": {
+    "plan_name": "101-1078476",
+    "source_doc": "_reka_05.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "כיתת גן",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (אות A)",
+        "confidence": "high",
+        "sqm": 130
+      }
+    ]
+  },
+  "1172402": {
+    "plan_name": "101-1172402",
+    "source_doc": "_horaot_01.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים (חינוך-גנ\"י)",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע, פינה דרום-מערבית (אות א')",
+        "confidence": "high",
+        "sqm": 130
+      },
+      {
+        "use": "מבנים ומוסדות ציבור",
+        "floor_start": "2",
+        "floor_label": "קומה 2 במפלס +10.00 (אות ג')",
+        "confidence": "high",
+        "sqm": 575
+      }
+    ]
+  },
+  "1133180": {
+    "plan_name": "101-1133180",
+    "source_doc": "_nispach_04.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מעון",
+        "floor_start": "-1",
+        "floor_label": "קומה 1- (מפלס הכניסה מדרך בית לחם)",
+        "confidence": "high",
+        "sqm": 440,
+        "classes": 3
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "-1",
+        "floor_label": "קומה 1- (מפלס הכניסה מדרך בית לחם)",
+        "confidence": "high",
+        "sqm": 190
+      }
+    ]
+  },
+  "1182146": {
+    "plan_name": "101-1182146",
+    "source_doc": "טבלת השטחים בלבד (אין נספח בינוי)",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "בית ספר 12 כיתות (8000 מ\"ר, מגרש 101)",
+        "floor_label": "לא נמצא פילוח קומה בנספח",
+        "elev_m": "",
+        "note": "המסמך היחיד בתיק הוא 'טבלת השטחים' + טבלת הערות/שינויים בלבד. אין נספח בינוי (חתך/חזית/תכניות קומה), לכן לא ניתן לקבוע באילו קומות בית הספר הרב-קומתי (12 כיתות) — חרף הציפייה שהוא רב-קומתי."
+      },
+      {
+        "use": "בית כנסת (300 מ\"ר, מגרש 101)",
+        "floor_label": "לא נמצא פילוח קומה בנספח",
+        "elev_m": "",
+        "note": "אין נספח בינוי בתיק — רק טבלת שטחים. לא ניתן לקבוע קומה."
+      }
+    ]
+  },
+  "1121920": {
+    "plan_name": "101-1121920",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע - גישה מהרחוב",
+        "confidence": "low",
+        "classes": 3
+      },
+      {
+        "use": "כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע - גישה מהרחוב",
+        "confidence": "medium",
+        "classes": 2
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע - גישה מהרחוב",
+        "confidence": "low"
+      }
+    ]
+  },
+  "1103571": {
+    "plan_name": "101-1103571",
+    "source_doc": "_reka_01.pdf",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "מבנים ומוסדות ציבור לחינוך (מגרש 1)",
+        "floor_label": "לא נמצא פילוח קומה בנספח",
+        "elev_m": "",
+        "note": "המסמך היחיד הוא תשריט מצב מאושר (תכנית ייעודי קרקע עם מקרא קרקע) ללא נספח בינוי, ללא תכניות קומה / חתכים / חזיתות. אין פילוח קומתי לשימוש החינוכי."
+      }
+    ]
+  },
+  "1193531": {
+    "plan_name": "101-1193531",
+    "source_doc": "_reka_05.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "מגרש 1 (מגרש תלת-מימדי 1A) - מעון יום בקומת הכניסה/קרקע. נספח קביעת מגרש תלת-מימדי מגדיר נפח בין Z=+729.40 ל-Z=+750.00 כאשר +750.00=קו קרקע; תכנית הקומה התחתונה (מפלסים -3.50/+750.90, +1.40) מסומנת בוורוד",
+        "sqm": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1114305": {
+    "plan_name": "101-1114305",
+    "source_doc": "_reka_04.pdf",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "קומה 0 / מפלס 697.30 (שב\"צ)",
+        "confidence": "medium",
+        "classes": 3
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומה 0 / מפלס 697.30 (שב\"צ)",
+        "confidence": "medium",
+        "classes": 2
+      }
+    ]
+  },
+  "1095330": {
+    "plan_name": "101-1095330",
+    "source_doc": "_nispach_05.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "מעון",
+        "floor_start": "4",
+        "floor_label": "קומה 04",
+        "confidence": "high",
+        "sqm": 441,
+        "classes": 3
+      },
+      {
+        "use": "כיתות גן",
+        "floor_start": "4",
+        "floor_label": "קומה 04",
+        "confidence": "high",
+        "sqm": 520,
+        "classes": 4
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "3",
+        "floor_label": "קומה 03",
+        "confidence": "high",
+        "sqm": 400,
+        "classes": 2
+      },
+      {
+        "use": "קהילה ורווחה",
+        "floor_start": "3",
+        "floor_label": "קומה 03",
+        "confidence": "medium",
+        "sqm": 984
+      }
+    ]
+  },
+  "1026574": {
+    "plan_name": "101-1026574",
+    "source_doc": "_horaot_01.pdf (פרוגרמה לשטחי ציבור / שטחים מבונים לצרכי ציבור) + _reka_03.pdf (נספח בינוי - חזיתות+חתכים+תכניות קומה)",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "לשכת תיירות עירונית / משרדי תיירות (מגרש 2)",
+        "floor_start": "קרקע",
+        "floor_label": "בתוך 2-3 קומות המסד בתא שטח 2 (מסחר בקומת קרקע ובקומה המשיקה לציר הרק\"ל); 300 מ\"ר",
+        "sqm": 300,
+        "confidence": "medium"
+      },
+      {
+        "use": "מעון יום / אשכול מעונות (מגרש 3)",
+        "floor_start": "1",
+        "floor_label": "קומה א' (שטח בהיקף 441 מ\"ר + חצר פתוחה; מסומן בצבע חום בנספח הבינוי)",
+        "sqm": 441,
+        "confidence": "high"
+      },
+      {
+        "use": "מבנים ומוסדות ציבור - תרבות חברה וקהילה (מגרש 4)",
+        "floor_start": "-1",
+        "floor_label": "מבנה ציבורי מתחת לשטח השצ\"פ במפלס דרך חברון; מבואת כניסה במפלס רחוב אל מוטלה (עד 200 מ\"ר). 2000 מ\"ר סה\"כ",
+        "sqm": 2000,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1191014": {
+    "plan_name": "101-1191014",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "כיתות גן",
+        "floor_start": "5",
+        "floor_label": "קומה 5 (מפלס +770.50)",
+        "confidence": "high",
+        "sqm": 260,
+        "classes": 2
+      },
+      {
+        "use": "משרדים עירוניים (תא 2)",
+        "floor_start": "5",
+        "floor_label": "קומה 5-6",
+        "confidence": "high",
+        "sqm": 136
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "6",
+        "floor_label": "קומה 6 (מפלס ~+773)",
+        "confidence": "high",
+        "sqm": 350
+      },
+      {
+        "use": "משרדים עירוניים (תא 1)",
+        "floor_start": "5",
+        "floor_label": "קומות 5-6",
+        "confidence": "medium",
+        "sqm": 904
+      }
+    ]
+  },
+  "1250026": {
+    "plan_name": "101-1250026",
+    "source_doc": "_reka_11.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "בית ספר",
+        "floor_start": "1",
+        "floor_label": "קומה 1",
+        "confidence": "high",
+        "note": "מאומת מול המתכננת: קומה 1"
+      }
+    ]
+  },
+  "1115450": {
+    "plan_name": "101-1115450",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע/רחוב (מפלס ~+703.00)",
+        "confidence": "medium",
+        "classes": 2
+      },
+      {
+        "use": "קהילה וחברה",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע/רחוב (מפלס ~+702.50-703.00)",
+        "confidence": "low"
+      }
+    ]
+  },
+  "1247485": {
+    "plan_name": "101-1247485",
+    "source_doc": "_nispach_03.pdf (נספח בינוי - תכניות קומה + חתכים א-א, ב-ב; הקומות הציבוריות צבועות כתום/ורוד)",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "3 כיתות מעון / גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומה 0 (קומת הקרקע/מפלס הכניסה) - בחתכים א-א וב-ב הקומות 0-2 צבועות בצבע ציבורי (כתום/ורוד) מעל קומות החניה התת-קרקעיות; 440 מ\"ר בנוי + 374 מ\"ר חצרות/מרפסות. המיקום והמפלס המדויקים גמישים ע\"פ ההוראות",
+        "sqm": 440,
+        "classes": 3,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1144179": {
+    "plan_name": "101-1144179",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "מעון",
+        "floor_start": "קרקע",
+        "floor_label": "+0.00",
+        "confidence": "medium",
+        "classes": 3
+      }
+    ]
+  },
+  "995829": {
+    "plan_name": "101-995829",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "1",
+        "floor_label": "מפלס עין צורים (קומה 1) - קומה אחת מעל מסחר/כניסה; אתר משופע",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1185578": {
+    "plan_name": "101-1185578",
+    "source_doc": "_nispach_03.pdf ('בינוי ופיתוח - חתכים וחזיתות') + _horaot_01.pdf (עמ' 13)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "-1",
+        "floor_label": "קומה 1- בבניין A (אזור חום כתום מכיוון השצ\"פ; אתר משופע, מפלסים מוחלטים)",
+        "confidence": "high",
+        "sqm": 130,
+        "classes": 1
+      },
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "מפלס כניסה בבניין B (אזור חום כתום מכיוון השצ\"פ)",
+        "confidence": "high",
+        "sqm": 130,
+        "classes": 1
+      }
+    ]
+  },
+  "9157": {
+    "plan_name": "101-9157",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת כניסה מרחוב רבי צדוק",
+        "confidence": "high",
+        "sqm": 30,
+        "classes": 1
+      }
+    ]
+  },
+  "778035": {
+    "plan_name": "101-778035",
+    "source_doc": "_nispach_08.pdf (+ _nispach_07.pdf)",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע ופיתוח (מפלס 0.00 / +712.50)",
+        "confidence": "high"
+      },
+      {
+        "use": "מעון יום לילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע ופיתוח (מפלס 0.00)",
+        "confidence": "high"
+      },
+      {
+        "use": "מועדון נוער קהילתי",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (חדר ציבורי / מתנ\"ס, מפלס 0.00 / +712.50)",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1354356": {
+    "plan_name": "101-1354356",
+    "source_doc": "_reka_01.pdf",
+    "source_type": "floorplan",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "גן ילדים (מגרש 2)",
+        "floor_label": "קומת קרקע",
+        "elev_m": "~728",
+        "note": "הגן הוא מבנה קטן עצמאי (130 מ\"ר) בקומת הקרקע. בתכנית הקומה הצבעונית/תנוחה הוא מופיע כמבנה כתום קטן (~3.00מ) עם חצר ירוקה (חצר גן) ועצים בגובה הקרקע (~728). תכניות הקומה האחרות באתר הן דירות מגורים. עקבי עם גן חד-קומתי בקומת קרקע עם חצר.",
+        "floor_start": "קרקע",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1301753": {
+    "plan_name": "101-1301753",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (מפלס כניסה +0.65/+0.70, מוחלט 735.20/735.25)",
+        "confidence": "high"
+      }
+    ]
+  },
+  "1316918": {
+    "plan_name": "101-1316918",
+    "source_doc": "_reka_05.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע (מפלס מוחלט ~755-757)",
+        "confidence": "high"
+      },
+      {
+        "use": "מבני ציבור אחר",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע (מועדון יום, מפלס מוחלט ~755-757)",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1388404": {
+    "plan_name": "101-1388404",
+    "source_doc": "_reka_03.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "גן ילדים",
+        "floor_start": "3",
+        "floor_label": "קומה 3 (קומת שטחים ציבוריים ראשונה) — נמשך לקומה 4; מגרש משופע, מפלסים מוחלטים ~744-749",
+        "confidence": "high",
+        "sqm": 130
+      },
+      {
+        "use": "מבני ציבור",
+        "floor_start": "3",
+        "floor_label": "קומות 3-5 (שטחים ציבוריים) מעל מסחר בקומות 0-2; כולל מרכז קהילתי ובית ספר",
+        "confidence": "high"
+      },
+      {
+        "use": "מועדון נוער",
+        "floor_start": "3",
+        "floor_label": "קומות 3-4 (מבנה ציבור מועדון), בתוך מקבץ השטחים הציבוריים",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1417039": {
+    "plan_name": "101-1417039",
+    "source_doc": "_horaot_01.pdf (סעיף שטחים מבונים לצרכי ציבור) + _reka_05.pdf (נספח בינוי - הדמיות מסד צבועות חום)",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "בית ספר (12 כיתות)",
+        "floor_start": "3",
+        "floor_label": "קומת המסד השלישית - תוספת קומת מסד מעל קומות המסד הקיימות במבנה הקניון (מעל מסחר+חניון); מסומן בצבע חום בנספח הבינוי",
+        "sqm": 3200,
+        "classes": 12,
+        "confidence": "high"
+      }
+    ]
+  },
+  "1437755": {
+    "plan_name": "101-1437755",
+    "source_doc": "_reka_04.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "תכנית קומת קרקע / מפלס ±0.00 (728.00)",
+        "confidence": "high",
+        "classes": 2
+      }
+    ]
+  },
+  "1131192": {
+    "plan_name": "101-1131192",
+    "source_doc": "_reka_03.pdf",
+    "source_type": "colored_section",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "ק. קרקע / בית כנסת, מפלס +0.00 (688.50); חנייה במפלסים שמתחת",
+        "confidence": "high"
+      },
+      {
+        "use": "מבנים ומוסדות ציבור לתרבות ופנאי",
+        "floor_start": "קרקע",
+        "floor_label": "ק. קרקע / מוסדות ציבור (חתך, בסיס מגדל); חנייה מתחת",
+        "confidence": "medium"
+      },
+      {
+        "use": "3 כיתות מעון יום",
+        "floor_start": "קרקע",
+        "floor_label": "ק. קרקע / מוסדות יום, מפלס +0.00 (696.70); ק. פארקינג -3.65 (693.05) מתחת",
+        "confidence": "medium",
+        "classes": 3
+      },
+      {
+        "use": "מבנים ומוסדות ציבור (מגרש 8)",
+        "floor_start": "קרקע",
+        "floor_label": "ק. קרקע בבסיס המגדלים (חתכי נספח הבינוי); חנייה מתחת",
+        "confidence": "medium"
+      },
+      {
+        "use": "מבנים ומוסדות ציבור (מגרש 9)",
+        "floor_start": "קרקע",
+        "floor_label": "ק. קרקע בבסיס המגדלים (חתכי נספח הבינוי); חנייה מתחת",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "1296284": {
+    "plan_name": "101-1296284",
+    "source_doc": "_reka_05.pdf",
+    "source_type": "floorplan",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "תרבות",
+        "floor_start": "קרקע",
+        "floor_label": "מבנה רב-שימושי (רבקה 11, תלפיות): מסד מסחר/תעסוקה ומעליו מגורים. בתכנית קומת כניסה מופיעים חדרים ציבוריים צבועים (כחול/כתום) במפלס הקרקע. תווית שימוש ספציפית לא נקראה בבירור; ייתכן מיקום בקומות המסד",
+        "sqm": null,
+        "confidence": "low"
+      },
+      {
+        "use": "גן ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "חדר ציבורי צבוע (כתום) בתכנית קומת הכניסה במפלס הקרקע; תווית שימוש ספציפית לא נקראה בבירור",
+        "sqm": null,
+        "confidence": "low"
+      }
+    ]
+  },
+  "1446319": {
+    "plan_name": "101-1446319",
+    "source_doc": "_reka_03.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "3 כיתות מעון יום",
+        "floor_start": "2",
+        "floor_label": "קומה 2 - מעונות (+8.00 / 738.50)",
+        "confidence": "high",
+        "sqm": 145,
+        "classes": 3
+      },
+      {
+        "use": "2 כיתות גן",
+        "floor_start": "3",
+        "floor_label": "קומה 3 - גנים (+12.50 / 743.00)",
+        "confidence": "high",
+        "sqm": 135,
+        "classes": 2
+      }
+    ]
+  },
+  "1024645": {
+    "plan_name": "101-1024645",
+    "source_doc": "_nispach_01.pdf (חתכים) + _nispach_06.pdf",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "2 כיתות גן",
+        "floor_start": "קרקע",
+        "floor_label": "קומה 1 (קרקע, +721.70)",
+        "classes": 2,
+        "confidence": "low",
+        "note": "קומות 1-2 מתויגות 'מחסנים'; מיקום הגן לא קריא ישירות"
+      },
+      {
+        "use": "מגרש 202 (ציבורי)",
+        "floor_start": "2",
+        "floor_label": "קומה 2 (קומה 1=מסחר, קומה 3=רווחה)",
+        "confidence": "medium",
+        "note": "חתך ב-ב: שטחי ציבור בקומה 2 של מגדל B"
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומה 1 (קרקע, +0.00=730.50)",
+        "confidence": "medium",
+        "note": "מגרש 203; שטחי ציבור בקרקע (תווית גנרית)"
+      }
+    ]
+  },
+  "1395268": {
+    "plan_name": "101-1395268",
+    "source_doc": "_reka_04.pdf",
+    "source_type": "elevation",
+    "confidence": "low",
+    "allocations": [
+      {
+        "use": "גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (לא מסומן במפורש בחזיתות/חתכים - חזיתות מונוכרום של מבנה מגורים; התקנון מציין קומת מסד מעל חניון תת-קרקעי לשטחי ציבור)",
+        "sqm": null,
+        "confidence": "low"
+      }
+    ]
+  },
+  "1431808": {
+    "plan_name": "101-1431808",
+    "source_doc": "_reka_06.pdf",
+    "source_type": "colored_section",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גן",
+        "floor_start": "-1",
+        "floor_label": "גן ילדים, מפלס 747.50 (כקומה -1 מתחת לקומת כניסה 750.50; אתר משופע)",
+        "confidence": "high",
+        "classes": 2
+      }
+    ]
+  },
+  "917138": {
+    "plan_name": "101-0917138",
+    "source_doc": "_nispach_03.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "2 כיתות גן",
+        "floor_start": "-1",
+        "floor_label": "קומת מרתף 1- (מפלס הכניסה בצד התחתון של אתר משופע)",
+        "confidence": "high",
+        "sqm": 140,
+        "classes": 2
+      },
+      {
+        "use": "בית כנסת",
+        "floor_start": "-1",
+        "floor_label": "קומת מרתף 1- (בית כנסת דו-מפלסי, כניסה ואולם במרתף 1-)",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "454553": {
+    "plan_name": "101-454553",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": []
+  },
+  "98251": {
+    "plan_name": "101-98251",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": []
+  },
+  "511923": {
+    "plan_name": "101-511923",
+    "source_doc": "_nispach_08.pdf",
+    "source_type": "elevation_plus_floorplans",
+    "confidence": "medium",
+    "allocations": [
+      {
+        "use": "מגרש 1 - בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "מבנה ציבור עצמאי",
+        "confidence": "medium",
+        "sqm": 250
+      },
+      {
+        "use": "מגרש 3 - מבנים ומוסדות ציבור לתרבות ופנאי",
+        "floor_start": "קרקע",
+        "floor_label": "מבנה ציבור עצמאי",
+        "confidence": "medium",
+        "sqm": 280
+      },
+      {
+        "use": "מגרש 6 - גני ילדים",
+        "floor_start": "קרקע",
+        "floor_label": "מבנה ציבור עצמאי",
+        "confidence": "medium",
+        "sqm": 441
+      },
+      {
+        "use": "מגרש 8 - גני ילדים ותרבות ופנאי",
+        "floor_start": "קרקע",
+        "floor_label": "מבנה ציבור עצמאי",
+        "confidence": "medium",
+        "sqm": 130
+      },
+      {
+        "use": "מגרש 9 - גני ילדים ותרבות ופנאי",
+        "floor_start": "קרקע",
+        "floor_label": "מבנה ציבור עצמאי",
+        "confidence": "medium",
+        "sqm": 390
+      }
+    ]
+  },
+  "855585": {
+    "plan_name": "101-855585",
+    "source_doc": "_nispach_04.pdf / _nispach_05.pdf",
+    "source_type": "floorplan",
+    "confidence": "high",
+    "allocations": [
+      {
+        "use": "בית כנסת",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (מפלס +688.80, בניין B \"הר מוריה\")",
+        "confidence": "high",
+        "sqm": 400
+      },
+      {
+        "use": "3 כיתות מעון",
+        "floor_start": "קרקע",
+        "floor_label": "קומת קרקע (מפלס +692.30, בניין C, \"אשכול משפחתון יום\")",
+        "confidence": "high",
+        "sqm": 440,
+        "classes": 3
+      },
+      {
+        "use": "3 כיתות גן",
+        "floor_start": null,
+        "floor_label": "מעל קומת המעון (החתך מראה גן ילדים מעל מעון; בתשריט מסומנות חצרות 250/530 מ\"ר ומבואת גני ילדים)",
+        "confidence": "medium",
+        "classes": 3
+      },
+      {
+        "use": "מבנים ומוסדות ציבור (מגרש 6)",
+        "floor_start": null,
+        "floor_label": "לא אותר חדר ציבור נפרד מתויג בנספח (מגרש 6)",
+        "confidence": "low"
+      }
+    ]
+  },
+  "1069764": {
+    "plan_name": "101-1069764",
+    "source_type": "none_found",
+    "confidence": "low",
+    "allocations": []
+  },
+  "844969": {
+    "plan_name": "101-0844969",
+    "source_doc": "נספח בינוי — תכניות קומה + חתכים (_nispach_02.pdf, 1:200, 01/2022, David Cherki & Associates)",
+    "source_type": "floor_plans",
+    "confidence": "high",
+    "site_note": "מרכז \"גשר\" לחינוך, תרבות ומורשת ישראל — רח' הרב דוד בן שמעון 4-6, מחנה ישראל. מבנה לשימור. ההיתר היחיד על התכנית (2022/0409.01) הוא היתר הריסה בלבד ואינו נוקב בשימושים, ולכן הפילוח נקרא מנספח הבינוי של התב\"ע. תכניות הקומה נושאות שמות חדרים מפורשים. כל השימושים הם תרבות/מורשת — אין חינוך פורמלי, גנים או מעונות בבניין.",
+    "allocations": [
+      {
+        "use": "מוזיאון",
+        "floor_start": "+7.30",
+        "floor_label": "קומה ג' — מפלס +7.30 (777.40), H=5.00",
+        "confidence": "high",
+        "note": "החלל המרכזי כולו מסומן \"מוזיאון\" בתכנית הקומה"
+      },
+      {
+        "use": "אולמות תצוגה",
+        "floor_start": "+12.70",
+        "floor_label": "קומה ד' — מפלס +12.70 (782.90), H=4.90",
+        "confidence": "high",
+        "note": "ארבעה חללים מסומנים \"אולם תצוגה\" סביב החלל המרכזי"
+      },
+      {
+        "use": "אולם כנסים",
+        "floor_start": "+18.00",
+        "floor_label": "מפלס +18.00 (788.10), H=4.90",
+        "confidence": "high",
+        "note": "בנוסף באותה קומה: \"חדר ישיבות\" ושני חללי \"משרדי הנהלה\""
+      },
+      {
+        "use": "משרדי הנהלה",
+        "floor_start": "+18.00",
+        "floor_label": "מפלס +18.00 (788.10)",
+        "confidence": "high",
+        "note": "שני חללים, לצד חדר הישיבות"
+      },
+      {
+        "use": "מרפסת / קומת גגות",
+        "floor_start": "+23.30",
+        "floor_label": "קומת גגות — מפלס +23.30 (793.45)",
+        "confidence": "high",
+        "note": "גג פעיל"
+      },
+      {
+        "use": "מקלט",
+        "floor_start": "-6.55",
+        "floor_label": "תכנית מקלט — מפלס -6.55 (763.55), H=2.50",
+        "confidence": "high",
+        "note": "מרתף"
+      },
+      {
+        "use": "קומת מסבח (שירותים ומטבח)",
+        "floor_start": "-3.75",
+        "floor_label": "מפלס -3.75 (766.35)",
+        "confidence": "high",
+        "note": "קומת שירות"
+      }
+    ],
+    "read_at": "2026-09-17",
+    "reader": "claude-vision"
+  }
+}

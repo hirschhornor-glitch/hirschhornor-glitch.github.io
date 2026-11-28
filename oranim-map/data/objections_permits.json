@@ -1,0 +1,48 @@
+{
+  "1983/0948.03": {
+    "tik": "1983/0948.03",
+    "status": "פרסום פעיל לפי סעיף 149",
+    "status_date": null,
+    "request_type": "ממ\"ד לבניין מגורים או מגדל ממ\"דים למבנה פשוט, ממ\"ד",
+    "request_description": "תוספת ל-4 יח\"ד: ממדי\"ם.",
+    "address": "רחוב לייב יפה 16",
+    "street": "לייב יפה",
+    "house": "16",
+    "schn": "ארנונה",
+    "deadline_publish": "06/12/2026",
+    "deadline_verified": "2026-11-22",
+    "deadline_source": "muni Rishui149 api/publish PD900 (תום מועד להגשת התנגדויות)",
+    "lnglat": [
+      35.221988,
+      31.747079
+    ],
+    "subs": [],
+    "tabas": [],
+    "doc_url": "http://jerarchivews.jerusalem.muni.il/ArchiveNGService.svc/rest/StreamDocById?DocId=b6bf31aa-dbb8-40e5-ab3c-e5069cd3d6c1",
+    "yk_url": "https://ykpubdata.jerusalem.muni.il/#/Details?TikNum=1983/0948.03&SystemCode=26400046&Page=BakashalInfo",
+    "source": "official_activepublications"
+  },
+  "2015/0949.02": {
+    "tik": "2015/0949.02",
+    "status": "פרסום פעיל לפי סעיף 149",
+    "status_date": null,
+    "request_type": "ממ\"ד, תוספת בניה / הרחבה לבניין קיים",
+    "request_description": "תוספת בניה על פי תבע וממד",
+    "address": "תלפיות",
+    "street": "גנרל פייר קניג",
+    "house": "13",
+    "schn": "גאולים - בקעה",
+    "deadline_publish": "06/12/2026",
+    "deadline_verified": "2026-11-22",
+    "deadline_source": "muni Rishui149 api/publish PD900 (תום מועד להגשת התנגדויות)",
+    "lnglat": [
+      35.2154,
+      31.756496
+    ],
+    "subs": [],
+    "tabas": [],
+    "doc_url": "http://jerarchivews.jerusalem.muni.il/ArchiveNGService.svc/rest/StreamDocById?DocId=d2365c06-a41c-4fc9-bbcf-37fddbe2524f",
+    "yk_url": "https://ykpubdata.jerusalem.muni.il/#/Details?TikNum=2015/0949.02&SystemCode=26400046&Page=BakashalInfo",
+    "source": "official_activepublications"
+  }
+}

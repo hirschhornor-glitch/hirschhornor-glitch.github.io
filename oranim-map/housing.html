@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>עבר למיפוי הכלל עירוני</title>
+    <!-- The two housing reports moved into the citywide site at /citywide/, where they
+         sit beside the commerce/employment report with a shared map. This page stays
+         behind only so links and bookmarks that already point here keep working, and
+         it preserves the tab anchor (#fund / #rental) on the way. -->
+    <script>
+        var h = (location.hash || "").replace(/^#/, "");
+        location.replace("citywide/" + (h ? "#" + h : "#fund"));
+    </script>
+    <meta http-equiv="refresh" content="0; url=citywide/#fund">
+    <style>
+        body { font-family: system-ui, sans-serif; background: #14141a; color: #eceaf2;
+               direction: rtl; display: flex; height: 100vh; margin: 0;
+               align-items: center; justify-content: center; }
+        a { color: #22c1a6; }
+    </style>
+</head>
+<body>
+    <div>הדוח עבר ל<a href="citywide/#fund">מיפוי הכלל עירוני</a>…</div>
+</body>
+</html>

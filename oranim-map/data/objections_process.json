@@ -1,0 +1,49 @@
+{
+ "scanned": 7,
+ "candidates": 7,
+ "unverified": [],
+ "generated": "2026-11-22",
+ "confirmed_open": [],
+ "verify": [
+  {
+   "tik": "2026/0355.00",
+   "address": "דרך חברון 54",
+   "stored_status": "תחילת פרסום הבקשה להקלה",
+   "status_date": "17/11/2026",
+   "request_type": "חפירה ומילוי, תמ\"א 38 הריסה ובניה, פיתוח שטח ציבורי פתוח, עבודות הריסה, בניה חדשה / בניין חדש",
+   "src": "tama38",
+   "open": true,
+   "route": "§149",
+   "deadline_publish": "24/12/2026",
+   "basis": "השלמת פרסום (משוער — אין שורת תום-מועד)",
+   "shown_tik": "2026/0355.00",
+   "lnglat": [
+    35.223398,
+    31.75986
+   ],
+   "in_district": true,
+   "category": "verify"
+  }
+ ],
+ "open_in_district": [
+  {
+   "tik": "2026/0355.00",
+   "address": "דרך חברון 54",
+   "stored_status": "תחילת פרסום הבקשה להקלה",
+   "status_date": "17/11/2026",
+   "request_type": "חפירה ומילוי, תמ\"א 38 הריסה ובניה, פיתוח שטח ציבורי פתוח, עבודות הריסה, בניה חדשה / בניין חדש",
+   "src": "tama38",
+   "open": true,
+   "route": "§149",
+   "deadline_publish": "24/12/2026",
+   "basis": "השלמת פרסום (משוער — אין שורת תום-מועד)",
+   "shown_tik": "2026/0355.00",
+   "lnglat": [
+    35.223398,
+    31.75986
+   ],
+   "in_district": true,
+   "category": "verify"
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+  "generated_at": "2026-11-23T05:09:35",
+  "sources": [
+    {
+      "file": "all_permits.json",
+      "label": "היתרים לפי תב\"ע",
+      "refresh": "דו-שבועי (סריקה)",
+      "records": 807,
+      "last_publish": "2026-11-19",
+      "age_days": 4,
+      "status": "green",
+      "notes": []
+    },
+    {
+      "file": "tama38_permits.json",
+      "label": "היתרי תמ\"א 38",
+      "refresh": "דו-שבועי + §149 שבועי",
+      "records": 1366,
+      "last_publish": "2026-11-19",
+      "age_days": 4,
+      "status": "green",
+      "notes": []
+    },
+    {
+      "file": "extra_permits.json",
+      "label": "היתרים משלימים (YK API)",
+      "refresh": "דו-שבועי (סטטוס)",
+      "records": 115,
+      "last_publish": "2026-11-19",
+      "age_days": 4,
+      "status": "info",
+      "notes": [],
+      "status_staleness": {
+        "entries": 115,
+        "open": 110,
+        "not_checked_90d": 0,
+        "not_checked_examples": [],
+        "status_date_older_90d": 82
+      }
+    },
+    {
+      "file": "active_sites.json",
+      "label": "אתרי בנייה פעילים (gov.il)",
+      "refresh": "דו-שבועי (סריקה)",
+      "records": 2,
+      "last_publish": "2026-11-19",
+      "age_days": 4,
+      "status": "green",
+      "notes": []
+    },
+    {
+      "file": "meetings.json",
+      "label": "ישיבות ועדה קרובות",
+      "refresh": "שבועי (ועדות)",
+      "records": 26,
+      "last_publish": "2026-11-23",
+      "age_days": 0,
+      "status": "green",
+      "notes": [
+        "ממתין לפרסום בריצה זו"
+      ]
+    },
+    {
+      "file": "objections_permits.json",
+      "label": "היתרים פתוחים להתנגדות §149",
+      "refresh": "שבועי",
+      "records": 2,
+      "last_publish": "2026-11-22",
+      "age_days": 1,
+      "status": "green",
+      "notes": []
+    },
+    {
+      "file": "unassigned_permits.geojson",
+      "label": "היתרים לא-משויכים (מגוקודד)",
+      "refresh": "לפי צורך",
+      "records": 13,
+      "last_publish": "2026-07-03",
+      "age_days": 143,
+      "status": "info",
+      "notes": []
+    },
+    {
+      "file": "tree_permits.json",
+      "label": "אישורי כריתת עצים",
+      "refresh": "יומי (CI)",
+      "records": 10,
+      "last_publish": "2026-11-22",
+      "age_days": 1,
+      "status": "green",
+      "notes": []
+    },
+    {
+      "file": "field_observations.json",
+      "label": "תצפיות שטח",
+      "refresh": "לפי צורך",
+      "records": 247,
+      "last_publish": "2026-06-21",
+      "age_days": 155,
+      "status": "info",
+      "notes": []
+    },
+    {
+      "file": "occupancy_status.json",
+      "label": "מאוכלס (טופס 4)",
+      "refresh": "לפי צורך",
+      "records": 25,
+      "last_publish": "2026-11-05",
+      "age_days": 18,
+      "status": "info",
+      "notes": []
+    }
+  ],
+  "scan": {
+    "date": "2026-11-18",
+    "removed_flag": false,
+    "raw": "2026-11-19T04:13:20 | date=2026-11-18 | all=new:4,status:14,removed:0 | tama38=new:0,status:19,removed:0",
+    "all": {
+      "new": 4,
+      "status": 14,
+      "removed": 0
+    },
+    "tama38": {
+      "new": 0,
+      "status": 19,
+      "removed": 0
+    },
+    "age_days": 5
+  },
+  "committee_audit": {
+    "date": "2026-11-23",
+    "age_days": 0,
+    "status": "green",
+    "checked": 0,
+    "matched": 0,
+    "missing": 0,
+    "missing_list": []
+  },
+  "known_failures": [
+    {
+      "log": "last_run.log",
+      "sample": "API 437: with permits 282, confirmed empty 323, failed 0, empty-but-throttled 0 → UI fallback 0",
+      "count": 1
+    },
+    {
+      "log": "mavat_sync_last_run.log",
+      "sample": "Waiting 45 seconds to let WAF challenge clear (or for you to solve it manually)...",
+      "count": 2
+    }
+  ],
+  "hidden_permits": {
+    "filtered": {
+      "all_permits": 5,
+      "tama38": 89
+    },
+    "filtered_examples": [
+      "2016/0258.02",
+      "2008/0076.06",
+      "1999/0678.06",
+      "2005/0866.11",
+      "1981/0916.03",
+      "1959/0244.02",
+      "1980/1018.00",
+      "1990/1004.02",
+      "1983/0586.00",
+      "1989/0603.00",
+      "1981/0060.00",
+      "1981/0060.01",
+      "1963/0399.03",
+      "2016/1083.01",
+      "1980/1018.00"
+    ],
+    "cross_attributed": 8,
+    "cross_attributed_examples": [
+      "2025/0258.01",
+      "2022/0311.00",
+      "2017/1080.01",
+      "2021/0479.00",
+      "2024/0568.01",
+      "2021/0112.00",
+      "2025/0225.00",
+      "2025/0102.00"
+    ],
+    "closed_hidden_by_default": 337,
+    "online_submission_units_not_counted": 33,
+    "online_submission_units": 294,
+    "total_hidden": 102
+  },
+  "silent_zero_plans": {
+    "count": 38,
+    "plans": {
+      "1008176": [
+        "2024/0349.00"
+      ],
+      "1032291": [
+        "2023/0248.00"
+      ],
+      "1043702": [
+        "2026/0100.00"
+      ],
+      "1094721": [
+        "1988/0713.02"
+      ],
+      "1095124": [
+        "2026/0452.00",
+        "2026/0475.00"
+      ],
+      "1102136": [
+        "1985/0698.01"
+      ],
+      "1115294": [
+        "2024/0493.00",
+        "2024/0493.01"
+      ],
+      "1131945": [
+        "2025/0235.00"
+      ],
+      "1142629": [
+        "2009/0541.01"
+      ],
+      "1161439": [
+        "2024/0426.01"
+      ],
+      "1163088": [
+        "2017/0515.02"
+      ],
+      "1179159": [
+        "2025/0014.00"
+      ],
+      "1189281": [
+        "2026/0234.01"
+      ],
+      "1211838": [
+        "1996/0007.04"
+      ],
+      "1218999": [
+        "2024/0466.00"
+      ],
+      "1227230": [
+        "2026/0277.00",
+        "2026/0277.01",
+        "2026/0278.00",
+        "2026/0278.01"
+      ],
+      "1242700": [
+        "2026/0321.01"
+      ],
+      "1257252": [
+        "2025/0311.00"
+      ],
+      "1360544": [
+        "2026/0460.00"
+      ],
+      "216614": [
+        "2022/0457.00"
+      ],
+      "305904": [
+        "2023/0304.00"
+      ],
+      "492199": [
+        "2000/0393.02"
+      ],
+      "575456": [
+        "2023/0487.00"
+      ],
+      "693432": [
+        "2020/0203.00"
+      ],
+      "706804": [
+        "2016/0602.01"
+      ],
+      "762039": [
+        "2026/0432.00"
+      ],
+      "820761": [
+        "2022/0576.00"
+      ],
+      "827956": [
+        "2025/0066.00"
+      ],
+      "861393": [
+        "2023/0128.00"
+      ],
+      "872499": [
+        "2022/0435.00"
+      ],
+      "882571": [
+        "1987/0080.01"
+      ],
+      "889428": [
+        "2022/0497.00",
+        "2024/0385.00"
+      ],
+      "897066": [
+        "2014/0472.01"
+      ],
+      "899880": [
+        "2026/0189.01",
+        "2026/0202.01"
+      ],
+      "923755": [
+        "2026/0441.00"
+      ],
+      "928176": [
+        "2025/0067.00"
+      ],
+      "972968": [
+        "2015/0196.01"
+      ],
+      "998336": [
+        "1983/0195.01"
+      ]
+    },
+    "index_gap": 38,
+    "scraper_suspect": []
+  }
+}
